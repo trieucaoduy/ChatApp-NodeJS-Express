@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://kit.fontawesome.com/fee45322e6.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Chat Real Time | NodeJS x Express</title>
+  </head>
+  <body>
+    <div class="container chat">
+      <div class="card">
+        <div class="card-header">
+          <h3>Chat Real Time</h3>
+        </div>
+        <div class="card-body">
+          <form action="chat-room.html">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="server">Server</label>
+              <select class="form-control" id="server" name="server">
+                <option value="Server 1">Server 1</option>
+                <option value="Server 2">Server 2</option>
+              </select>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary">Join Chat</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

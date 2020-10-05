@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://kit.fontawesome.com/fee45322e6.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Chat Real Time | NodeJS x Express</title>
+  </head>
+  <body>
+    <div class="card chat-main">
+      <div class="card-header">Chat room <a href="/" ><button class="btn btn-primary">Leave room</button></a></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4 left-chat">
+						<h5 class="title"><i class="fas fa-globe-asia"></i> Sever Name</h5>
+						<p id="server-name"></p>
+
+						<h5 class="title"><i class="fas fa-users"></i> Users</h5>
+						<ul id="users"></ul>
+						
+          </div>
+          <div class="col-8 body-chat">
+            <div class="chat-content" id="content"></div>
+          </div>
+        </div>
+			</div>
+			<div class="card-footer">
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-8">
+						<div class="bottom-bar-chat">
+							<form id="chat-form">
+								<input
+									type="text"
+									id="message"
+									class="form-control input-message"
+									placeholder="Enter Message..."
+								/>
+								<button id="sendMessage">
+									<i class="fas fa-paper-plane"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+	<script src="./js/script.js"></script>
+
+</html>

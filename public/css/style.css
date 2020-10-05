@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+}
+
+.chat .card {
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* margin: 200px auto; */
+}
+
+.chat .card-header {
+	text-align: center;
+}
+.card-header {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+
+p {
+	margin: 0;
+}
+
+.chat-main img {
+	width: 50px;
+}
+
+.user-list {
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.user-list-inner {
+	padding: 10px;
+
+}
+
+.time {
+	float: right;
+}
+
+.chat-main {
+	height: 100vh;
+}
+
+.body-chat {
+	border: 1px solid #eee;
+	margin: 0;
+	position: relative;
+	height: 75vh;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+.input-message {
+	display: inline-block;
+	margin-left: 25% ;
+	width: 70%;
+	padding: 0 20px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, .05);
+	box-shadow: none;
+}
+
+.body-chat .bottom-bar-chat {
+	/* position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px; */
+	/* width: 100%;
+ */
+
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding: 10px;
+}
+
+.active {
+	background-color: rgba(0, 0, 0, .05);
+}
+
+.chat-message {
+	/* float: right; */
+	margin: 20px;
+	clear: both;
+}
+
+.chat-message .chat-text {
+	background: #0099ff;
+	color: #fff;
+	padding: 5px 20px;
+	width: fit-content;
+	border-radius: 20px;
+	/* margin: 20px; */
+
+}
+
+.chat-message .chat-sub {
+	/* text-align: right; */
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.chat-message .chat-time {
+	text-align: right;
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+.chat-message .chat-user {
+	font-size: 12px;
+}
+
+.clear-fix {
+	clear: both;
+}
+
+#users li {
+	text-decoration: none;
+	list-style: none;
+	padding: 10px;
+	font-weight: 500;
+	color: #0099ff;
+	transition: .3s;
+}
+
+#users li:hover {
+  box-shadow: 1px 10px 6px -6px #ddd;
+}
+
+#users li i {
+	font-size: 15px;
+	margin-right: 10px;
+	color: #4cd137;
+}
+
+.title {
+	background-color: rgba(0, 0, 0, .05);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#server-name {
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	background-color: #0099ff;
+	width: fit-content;
+	border-radius: 20px;
+	color: #fff;
+	font-weight: 500;
+	transition: .3s;
+}
+
+#server-name:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sendMessage {
+	color: #0099ff
+}
+
+.card-header button {
+	float: right;
+}
+
